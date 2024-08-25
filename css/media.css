@@ -862,6 +862,10 @@
     padding: 0 4px 12px 9px;
   }
 
+  .hero__item {
+    max-width: 44%;
+  }
+
   .footer__list {
     column-gap: 58px;
   }
