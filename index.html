@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="preload" href="/fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/MullerLightItalic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/MullerRegularItalic.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 
@@ -23,7 +28,6 @@
         </picture>
       </a>
       <nav class="header__nav nav">
-        <div class="header__box-list">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" aria-label="ссылка на страницу подкасты" href="#podcast">Подкасты</a>
@@ -41,18 +45,15 @@
               <a class="nav__link" aria-label="ссылка на страницу о нас" href="#hero">О&nbsp;нас</a>
             </li>
           </ul>
-        </div>
-        <div class="header__box-button">
-          <button class="header__btn btn" aria-label="кнопка поиска по странице">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
       </nav>
+      <button class="header__btn btn" aria-label="кнопка поиска по странице">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -68,7 +69,6 @@
           </p>
           <a class="radio__btn btn" aria-label="кнопка слушать эфир" href="#">Слушать эфир</a>
         </div>
-        <div class="radio__content-foto"></div>
       </div>
     </section>
 
@@ -77,7 +77,11 @@
         <h2 class="title podcast__title">Подкасты</h2>
         <ul class="podcast__list">
           <li class="podcast__item">
-            <div class="podcast__content-foto podcast__foto1">
+            <div class="podcast__content-foto">
+              <picture class="podcast__img">
+                <source srcset="../img/podcast1_4.jpg" media="(max-width:380px)">
+                <img src="./img/podcast1.jpg" alt="Европа. XIX век">
+              </picture>
               <data class="podcast__data" value="2024-06-14" >14&nbsp;июня</data>
             </div>
             <div class="podcast__content-info">
@@ -87,7 +91,11 @@
             </div>
           </li>
           <li class="podcast__item">
-            <div class="podcast__content-foto podcast__foto2">
+            <div class="podcast__content-foto">
+              <picture class="podcast__img">
+                <source srcset="../img/podcast2_4.jpg" media="(max-width:380px)">
+                <img src="./img/podcast2.jpg" alt="О музыке">
+              </picture>
               <data class="podcast__data" value="2024-06-11">11&nbsp;июня</data>
             </div>
             <div class="podcast__content-info">
@@ -97,7 +105,11 @@
             </div>
           </li>
           <li class="podcast__item">
-            <div class="podcast__content-foto podcast__foto3">
+            <div class="podcast__content-foto">
+              <picture class="podcast__img">
+                <source srcset="../img/podcast3_4.jpg" media="(max-width:380px)">
+                <img src="./img/podcast3.jpg" alt="Люди сегодня">
+              </picture>
               <data class="podcast__data" value="2024-06-08">8&nbsp;июня</data>
             </div>
             <div class="podcast__content-info">
@@ -107,7 +119,11 @@
             </div>
           </li>
           <li class="podcast__item">
-            <div class="podcast__content-foto podcast__foto4">
+            <div class="podcast__content-foto">
+              <picture class="podcast__img">
+                <source srcset="../img/podcast4_4.jpg" media="(max-width:380px)">
+                <img src="./img/podcast4.jpg" alt="Хэллоу, Африка!">
+              </picture>
               <data class="podcast__data" value="2024-06-05">5&nbsp;июня</data>
             </div>
             <div class="podcast__content-info">
@@ -117,7 +133,11 @@
             </div>
           </li>
           <li class="podcast__item">
-            <div class="podcast__content-foto podcast__foto5">
+            <div class="podcast__content-foto">
+              <picture class="podcast__img">
+                <source srcset="../img/podcast5_4.jpg" media="(max-width:380px)">
+                <img src="./img/podcast5.jpg" alt="Обо всём">
+              </picture>
               <data class="podcast__data" value="2024-06-02">2&nbsp;июня</data>
             </div>
             <div class="podcast__content-info">
@@ -127,7 +147,11 @@
             </div>
           </li>
           <li class="podcast__item">
-            <div class="podcast__content-foto podcast__foto6">
+            <div class="podcast__content-foto">
+              <picture class="podcast__img">
+                <source srcset="../img/podcast6_4.jpg" media="(max-width:380px)">
+                <img src="./img/podcast6.jpg" alt="Физика цвета">
+              </picture>
               <data class="podcast__data" value="2024-05-28">28&nbsp;мая</data>
             </div>
             <div class="podcast__content-info">
@@ -137,7 +161,11 @@
             </div>
           </li>
           <li class="podcast__item">
-            <div class="podcast__content-foto podcast__foto7">
+            <div class="podcast__content-foto">
+              <picture class="podcast__img">
+                <source srcset="../img/podcast7_4.jpg" media="(max-width:380px)">
+                <img src="./img/podcast7.jpg" alt="Источник звука">
+              </picture>
               <data class="podcast__data" value="2024-05-22">22&nbsp;мая</data>
             </div>
             <div class="podcast__content-info">
@@ -147,7 +175,11 @@
             </div>
           </li>
           <li class="podcast__item">
-            <div class="podcast__content-foto podcast__foto8">
+            <div class="podcast__content-foto">
+              <picture class="podcast__img">
+                <source srcset="../img/podcast8_4.jpg" media="(max-width:380px)">
+                <img src="./img/podcast8.jpg" alt="Правила этикета">
+              </picture>
               <data class="podcast__data" value="2024-05-18">18&nbsp;мая</data>
             </div>
             <div class="podcast__content-info">
@@ -173,11 +205,16 @@
           </div>
           <div class="broadcast__content-card">
             <ul class="broadcast__list">
-              <li class="broadcast__item broadcast__foto1">
+              <li class="broadcast__item">
+                <picture class="broadcast__foto">
+                  <source srcset="./img/broadcast1_4.jpg" media="(max-width:380px)">
+                  <img src="./img/broadcast1.jpg" alt="О людях и книгах">
+                </picture>
                 <div class="broadcast__content">
                   <h3 class="broadcast__heading">О&nbsp;людях и&nbsp;книгах</h3>
                   <p class="broadcast__text-content">Анонсируется отдельно</p>
-                  <a class="broadcast__link" aria-label="кнопка подробнее о передаче" href="#">Подробнее <svg width="21"
+                  <a class="broadcast__link" aria-label="кнопка подробнее о передаче" href="#">Подробнее
+                    <svg width="21"
                       height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" />
@@ -185,7 +222,11 @@
                   </a>
                 </div>
               </li>
-              <li class="broadcast__item broadcast__foto2">
+              <li class="broadcast__item">
+                <picture class="broadcast__foto">
+                  <source srcset="./img/broadcast2_4.jpg" media="(max-width:380px)">
+                  <img src="./img/broadcast2.jpg" alt="О людях и книгах">
+                </picture>
                 <div class="broadcast__content">
                   <h3 class="broadcast__heading">Графомания td</h3>
                   <p class="broadcast__text-content">По&nbsp;понедельникам в&nbsp;10:00</p>
@@ -197,7 +238,11 @@
                   </a>
                 </div>
               </li>
-              <li class="broadcast__item broadcast__foto3">
+              <li class="broadcast__item">
+                <picture class="broadcast__foto">
+                  <source srcset="./img/broadcast3_4.jpg" media="(max-width:380px)">
+                  <img src="./img/broadcast3.jpg" alt="О людях и книгах">
+                </picture>
                 <div class="broadcast__content">
                   <h3 class="broadcast__heading">Не&nbsp;Рим, не&nbsp;Троя</h3>
                   <p class="broadcast__text-content">По&nbsp;вторникам в&nbsp;12:00</p>
@@ -209,7 +254,11 @@
                   </a>
                 </div>
               </li>
-              <li class="broadcast__item broadcast__foto4">
+              <li class="broadcast__item">
+                <picture class="broadcast__foto">
+                  <source srcset="./img/broadcast4_4.jpg" media="(max-width:380px)">
+                  <img src="./img/broadcast4.jpg" alt="О людях и книгах">
+                </picture>
                 <div class="broadcast__content">
                   <h3 class="broadcast__heading">Эрудит</h3>
                   <p class="broadcast__text-content">По&nbsp;пятницам в&nbsp;17:00</p>
@@ -221,7 +270,11 @@
                   </a>
                 </div>
               </li>
-              <li class="broadcast__item broadcast__foto5">
+              <li class="broadcast__item">
+                <picture class="broadcast__foto">
+                  <source srcset="./img/broadcast5_4.jpg" media="(max-width:380px)">
+                  <img src="./img/broadcast5.jpg" alt="О людях и книгах">
+                </picture>
                 <div class="broadcast__content">
                   <h3 class="broadcast__heading">Тонкости эпох</h3>
                   <p class="broadcast__text-content">По&nbsp;субботам в&nbsp;10:00</p>
@@ -233,7 +286,11 @@
                   </a>
                 </div>
               </li>
-              <li class="broadcast__item broadcast__foto6">
+              <li class="broadcast__item">
+                <picture class="broadcast__foto">
+                  <source srcset="./img/broadcast6_4.jpg" media="(max-width:380px)">
+                  <img src="./img/broadcast6.jpg" alt="О людях и книгах">
+                </picture>
                 <div class="broadcast__content">
                   <h3 class="broadcast__heading">Живые мысли</h3>
                   <p class="broadcast__text-content">По&nbsp;воскресеньям в&nbsp;15:30</p>
@@ -442,7 +499,7 @@
             подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук
             в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите
             приобрести!</p>
-          <p class="product__text-price">2&nbsp;800&nbsp;₽</p>
+          <span class="product__text-price">2&nbsp;800&nbsp;₽</span>
           <a class="product__btn" aria-label="кнопка купить радио на яндекс маркет" href="#">
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_162515_385)">
@@ -482,7 +539,7 @@
         <ul class="hero__list">
           <li class="hero__item">
             <picture class="hero__foto">
-              <source srcset="./img/hero1_4.jpg" media="(max-width:767px)">
+              <source srcset="./img/hero1_4.jpg" media="(max-width:380px)">
               <source srcset="./img/hero1_3.jpg" media="(max-width:1023px)">
               <source srcset="./img/hero1_2.jpg" media="(max-width:1279px)">
               <img src="./img/hero1.jpg" alt="Дмитрий Гутенберг">
@@ -494,7 +551,7 @@
           </li>
           <li class="hero__item">
             <picture class="hero__foto">
-              <source srcset="./img/hero2_4.jpg" media="(max-width:767px)">
+              <source srcset="./img/hero2_4.jpg" media="(max-width:380px)">
               <source srcset="./img/hero2_3.jpg" media="(max-width:1023px)">
               <source srcset="./img/hero2_2.jpg" media="(max-width:1279px)">
               <img src="./img/hero2.jpg" alt="Анна Васильева">
@@ -506,7 +563,7 @@
           </li>
           <li class="hero__item">
             <picture class="hero__foto">
-              <source srcset="./img/hero3_4.jpg" media="(max-width:767px)">
+              <source srcset="./img/hero3_4.jpg" media="(max-width:380px)">
               <source srcset="./img/hero3_3.jpg" media="(max-width:1023px)">
               <source srcset="./img/hero3_2.jpg" media="(max-width:1279px)">
               <img src="./img/hero3.jpg" alt="Пётр Дмитриевский">
@@ -518,7 +575,7 @@
           </li>
           <li class="hero__item">
             <picture class="hero__foto">
-              <source srcset="./img/hero4_4.jpg" media="(max-width:767px)">
+              <source srcset="./img/hero4_4.jpg" media="(max-width:380px)">
               <source srcset="./img/hero4_3.jpg" media="(max-width:1023px)">
               <source srcset="./img/hero4_2.jpg" media="(max-width:1279px)">
               <img src="./img/hero4.jpg" alt="Татьяна Флеганова">
@@ -537,7 +594,7 @@
               <input class="hero__form-wink hero__input" aria-label="введите ваш адрес электронной почты" type="email" name="email" placeholder="Email" required>
             </div>
             <div class="hero__form-btn">
-              <button class="btn hero__btn">Отправить</button>
+              <button class="btn hero__btn" type="button" aria-label="отправить данные формы">Отправить</button>
               <label class="hero__check">
                 <input class="hero__check-input" aria-label="согласие на обработку персоональных данных" type="checkbox" name="flag" required>
                 <span class="hero__descr">Согласен на&nbsp;обработку персональных данных</span>
@@ -606,62 +663,25 @@
               <a class="footer__link-nav" aria-label="ссылка на страницу подкасты" href="podcast">Подкасты</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу передачи" href="broadcast">Передачи</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу гости" href="guests">Гости</a>
-            </li>
-          </ul>
-          <ul class="footer__list">
-            <li class="footer__item">
               <a class="footer__link-nav" aria-label="ссылка на страницу Плейлисты" href="playlist">Плейлисты</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу сетка" href="#">Сетка</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу о нас" href="hero">О&nbsp;нас</a>
-            </li>
-          </ul>
-          <ul class="footer__list">
-            <li class="footer__item">
               <a class="footer__link-nav" aria-label="ссылка на страницу Новости" href="#">Новости</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link-nav" aria-label="ссылка на страницу передачи" href="broadcast">Передачи</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link-nav" aria-label="ссылка на страницу сетка" href="#">Сетка</a>
             </li>
             <li class="footer__item">
               <a class="footer__link-nav" aria-label="ссылка на страницу Блоги" href="#">Блоги</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу Топы" href="#">Топы</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="footer__nav-brec320">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу подкасты" href="podcast">Подкасты</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу передачи" href="broadcast">Передачи</a>
-            </li>
-            <li class="footer__item">
               <a class="footer__link-nav" aria-label="ссылка на страницу гости" href="guests">Гости</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу Плейлисты" href="playlist">Плейлисты</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу сетка" href="#">Сетка</a>
-            </li>
-          </ul>
-          <ul class="footer__list">
-            <li class="footer__item">
               <a class="footer__link-nav" aria-label="ссылка на страницу о нас" href="hero">О&nbsp;нас</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу новости" href="#">Новости</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link-nav" aria-label="ссылка на страницу блоги" href="#">Блоги</a>
             </li>
             <li class="footer__item">
               <a class="footer__link-nav" aria-label="ссылка на страницу Топы" href="#">Топы</a>

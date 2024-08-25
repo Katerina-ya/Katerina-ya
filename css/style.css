@@ -144,10 +144,6 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
-
-.header__box-list {
-  max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -170,7 +166,6 @@ ul {
 .nav__link:focus-visible {
   color: var(--white);
   background-color: var(--focus);
-  padding: 5px;
 }
 
 .nav__link:hover:not(:focus-visible) {
@@ -204,10 +199,14 @@ ul {
 
 .radio__conteiner {
   display: flex;
+  background-image: url(../img/radio1.png);
+  background-repeat: no-repeat;
+  background-position: 90% 40%;
+  background-size: 27%;
 }
 
 .radio__content-text {
-  flex-basis: 115%;
+  max-width: 55%;
   padding: 96px 0 94px 0;
 }
 
@@ -236,20 +235,20 @@ ul {
 }
 
 .radio__btn {
-  display: inline-block;
   padding: 25px 54px;
+  max-width: 245px;
   border-radius: 40px;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
   background-color: var(--back);
   color: var(--white);
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .radio__btn:focus-visible {
   background-color: var(--focus);
-  border: 2px solid var(--active);
+  outline: 2px solid var(--active);
 }
 
 .radio__btn:hover:not(:focus-visible) {
@@ -259,15 +258,6 @@ ul {
 .radio__btn:active:not(:focus-visible) {
   background-color: var(--active);
 }
-
-.radio__content-foto {
-  background-image: url(../img/radio1.png);
-  background-repeat: no-repeat;
-  background-position: 97% 46%;
-  background-size: 67%;
-  width: 100%;
-}
-
 
 /*podcast*/
 
@@ -291,6 +281,7 @@ ul {
   display: flex;
   flex: 1 0 47%;
   max-width: 50%;
+  max-height: 140px;
 }
 
 .podcast__content-info {
@@ -301,41 +292,7 @@ ul {
 
 .podcast__content-foto {
   position: relative;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   min-width: 112px;
-}
-
-.podcast__foto1 {
-  background-image: url(../img/podcast1.jpg);
-}
-
-.podcast__foto2 {
-  background-image: url(../img/podcast2.jpg);
-}
-
-.podcast__foto3 {
-  background-image: url(../img/podcast3.jpg);
-}
-
-.podcast__foto4 {
-  background-image: url(../img/podcast4.jpg);
-}
-
-.podcast__foto5 {
-  background-image: url(../img/podcast5.jpg);
-}
-
-.podcast__foto6 {
-  background-image: url(../img/podcast6.jpg);
-}
-
-.podcast__foto7 {
-  background-image: url(../img/podcast7.jpg);
-}
-
-.podcast__foto8 {
-  background-image: url(../img/podcast8.jpg);
 }
 
 .podcast__data {
@@ -379,7 +336,7 @@ ul {
 /*broadcast*/
 
 .broadcast {
-  padding: 107px 0 99px 0;
+  padding: 108px 0 92px 0;
 }
 
 .broadcast__content-info {
@@ -392,42 +349,41 @@ ul {
   justify-content: space-between;
   flex-basis: 28%;
   margin-top: -12px;
-  margin-bottom: -6px;
   background-image: url(../img/broadcast_mic.png);
   background-repeat: no-repeat;
-  background-position: left 345px;
+  background-position: left 73%;
   background-size: 65px 17%;
 }
 
 .broadcast__btn {
-  display: inline-block;
   margin-bottom: 13px;
   padding: 11px 54px;
+  max-width: 161px;
   border: 2px solid var(--text);
   border-radius: 77px;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
   color: var(--text);
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .broadcast__btn:focus-visible {
   color: var(--white);
   background-color: var(--focus);
-  border: 2px solid var(--active);
+  outline: 2px solid var(--active);
 }
 
 .broadcast__btn:hover:not(:focus-visible) {
   color: var(--white);
   background-color: var(--focus);
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .broadcast__btn:active:not(:focus-visible) {
   color: var(--white);
   background-color: var(--active);
-  border: 2px solid var(--active);
+  outline: 2px solid var(--active);
 }
 
 .broadcast__text {
@@ -451,41 +407,18 @@ ul {
 .broadcast__item {
   display: flex;
   flex-direction: column;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% 148px;
   flex: 1 1 30%;
-  padding: 169px 0 15px 15px;
   max-width: 33%;
   border: 1px solid #e6e8ec;
 }
 
-.broadcast__foto1 {
-  background-image: url(../img/broadcast1.jpg);
-}
-
-.broadcast__foto2 {
-  background-image: url(../img/broadcast2.jpg);
-}
-
-.broadcast__foto3 {
-  background-image: url(../img/broadcast3.jpg);
-}
-
-.broadcast__foto4 {
-  background-image: url(../img/broadcast4.jpg);
-}
-
-.broadcast__foto5 {
-  background-image: url(../img/broadcast5.jpg);
-}
-
-.broadcast__foto6 {
-  background-image: url(../img/broadcast6.jpg);
+.broadcast__foto {
+  margin-bottom: 15px;
 }
 
 .broadcast__content {
   flex: inherit;
+  padding: 0 0 19px 15px;
 }
 
 .broadcast__heading {
@@ -522,7 +455,6 @@ ul {
 .broadcast__link:focus-visible {
   color: var(--white);
   background-color: var(--focus);
-  padding: 5px;
 }
 
 .broadcast__link:hover:not(:focus-visible) {
@@ -552,7 +484,7 @@ ul {
 /*guests*/
 
 .guests {
-  padding: 94px 0 90px 0;
+  padding: 95px 0 90px 0;
   background-color: #121723;
 }
 
@@ -628,7 +560,7 @@ ul {
   border-radius: 77px;
   border: 2px solid #aa9dfa;
   color: #aa9dfa;
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 
@@ -640,13 +572,13 @@ ul {
 .guests__btn:hover:not(:focus-visible) {
   color: var(--white);
   background-color: var(--focus);
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .guests__btn:active:not(:focus-visible) {
   color: var(--white);
   background-color: var(--active);
-  border: 2px solid var(--active);
+  outline: 2px solid var(--active);
 }
 
 /*playlist*/
@@ -804,6 +736,7 @@ ul {
 }
 
 .product__text-price {
+  display: block;
   margin-bottom: 29px;
   font-size: 30px;
   font-weight: 500;
@@ -820,25 +753,25 @@ ul {
   border: 2px solid #F0D288;
   border-radius: 100px;
   color: #F0D288;
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .product__btn:focus-visible {
   color: var(--text);
   background-color: #BB973E;
-  border: 2px solid #F0D288;
+  outline: 2px solid #F0D288;
 }
 
 .product__btn:hover:not(:focus-visible) {
   color: var(--text);
   background-color: #F0D288;
-  border: 2px solid #F0D288;
+  outline: 2px solid #F0D288;
 }
 
 .product__btn:active:not(:focus-visible) {
   color: var(--text);
   background-color: #BB973E;
-  border: 2px solid #BB973E;
+  outline: 2px solid #BB973E;
 }
 
 .product__btn-fill {
@@ -920,7 +853,6 @@ ul {
 
 .hero__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
   gap: 29px;
@@ -930,8 +862,8 @@ ul {
   max-width: 255px
 }
 
-.hero__card {
-  padding-top: 25px;
+.hero__foto img {
+  margin-bottom: 25px;
 }
 
 .hero__heading {
@@ -1003,12 +935,12 @@ ul {
   line-height: 20px;
   background-color: var(--back);
   color: var(--white);
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .hero__btn:focus-visible {
   background-color: var(--focus);
-  border: 2px solid var(--active);
+  outline: 2px solid var(--active);
 }
 
 .hero__btn:hover:not(:focus-visible) {
@@ -1082,10 +1014,6 @@ ul {
   background-position: 0 88%;
 }
 
-.footer__nav-brec320 {
-  display: none;
-}
-
 .footer__content-top {
   display: flex;
   justify-content: space-between;
@@ -1095,6 +1023,7 @@ ul {
 .footer__box-left {
   display: flex;
   flex-direction: column;
+  flex-basis: 200%;
 }
 
 .footer__logo {
@@ -1126,10 +1055,10 @@ ul {
 
 .footer__nav {
   display: flex;
-  gap: 110px;
 }
 
 .footer__item {
+  min-width: 86px;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -1138,8 +1067,10 @@ ul {
 
 .footer__list {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 20px;
+  column-gap: 93px;
 }
 
 .footer__content-bottom {
@@ -1163,7 +1094,6 @@ ul {
 .footer__link-nav:focus-visible {
   color: var(--white);
   background-color: var(--focus);
-  padding: 5px;
 }
 
 .footer__link-nav:hover:not(:focus-visible) {
